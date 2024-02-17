@@ -1,0 +1,15 @@
+@use "./typography" as *;
+@use "./mixin" as *;
+@use "./variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  color: $BrainFlix-Black;
+}
