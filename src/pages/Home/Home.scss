@@ -4,4 +4,7 @@
 @use "../../styles/partials/mixin" as *;
 
 .home {
+  &__buttons {
+    display: flex;
+  }
 }

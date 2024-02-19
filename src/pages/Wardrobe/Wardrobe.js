@@ -3,7 +3,7 @@ import "./Wardrobe.scss";
 const Wardrobe = () => {
   return (
     <nav className="wardrobe">
-      <div></div>
+      <div>Wardrobe</div>
     </nav>
   );
 };

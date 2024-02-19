@@ -3,7 +3,7 @@ import "./FavouriteLook.scss";
 const FavouriteLook = () => {
   return (
     <nav className="look">
-      <div></div>
+      <div>FavouriteLook</div>
     </nav>
   );
 };
