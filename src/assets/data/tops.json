@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "category": "shirt",
+    "brand": "Lime",
+    "color": "blue",
+    "image": "https://cache-limeshop.cdnvideo.ru/limeshop/aa/760732497628c7e07c5d511ee83cb00155dc81e05.jpeg"
+  },
+  {
+    "id": "2",
+    "category": "crop",
+    "brand": "Lime",
+    "color": "black",
+    "image": "https://cache-limeshop.cdnvideo.ru/limeshop/aa/755105632393add61936a11ee9de800155d011401.jpeg"
+  },
+  {
+    "id": "4",
+    "category": "t-shirt",
+    "brand": "Lime",
+    "color": "grey",
+    "image": "https://cache-limeshop.cdnvideo.ru/limeshop/aa/7556227374c8e0b49981b11ee83c300155dc81e05.jpeg"
+  },
+  {
+    "id": "5",
+    "category": "vest",
+    "brand": "Lime",
+    "color": "brown",
+    "image": "https://cache-limeshop.cdnvideo.ru/limeshop/aa/75950065194551a49bb5d11ee83ca00155dc81e05.jpeg"
+  },
+  {
+    "id": "6",
+    "category": "dress",
+    "brand": "Lime",
+    "color": "black",
+    "image": "https://cache-limeshop.cdnvideo.ru/limeshop/aa/758237492751183c6afe211ee83c600155dc81e05.jpeg"
+  }
+]
