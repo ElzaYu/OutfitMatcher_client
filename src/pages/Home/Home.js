@@ -5,17 +5,21 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <nav className="home">
-      <div>Outfit Matcher</div>
-      <div className="home__buttons">
-        <Link to={`/matcher`}>
-          <Button name="Pick your outfit" />
-        </Link>
-        <Link to={`/wardrobe`}>
-          <Button name="Wardrobe" />
-        </Link>
-        <Link to={`/favoritelook`}>
-          <Button name="Favorite Looks" />
-        </Link>
+      <div className="home__wrapper">
+        <h1>
+          OUTFIT <br /> MATCHER
+        </h1>
+        <div className="home__buttons">
+          <Link to={`/matcher`}>
+            <Button name="PICK YOUR OUTFIT" />
+          </Link>
+          <Link to={`/wardrobe`}>
+            <Button name="YOUR WARDROBE" />
+          </Link>
+          <Link to={`/favoritelook`}>
+            <Button name="FAVOURITE " />
+          </Link>
+        </div>
       </div>
     </nav>
   );

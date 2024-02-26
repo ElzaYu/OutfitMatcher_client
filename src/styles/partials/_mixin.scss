@@ -215,3 +215,57 @@
   padding-bottom: 1.5rem;
   padding-left: 6rem;
 }
+
+// ______________________
+@mixin formfield {
+  height: 2.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid $borders;
+  padding: 0.5rem 1rem;
+  background-color: $white;
+  font-size: $mobile-m-body-font;
+  line-height: $mobile-m-body-line-height;
+  color: $globalText;
+
+  &::placeholder {
+    color: $placeholder;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $interactiveElements;
+  }
+
+  @include tablet {
+    height: 2.375rem;
+    font-size: $normal-m-body-font;
+    line-height: $normal-m-body-line-height;
+  }
+}
+
+@mixin formfield-error {
+  border: 1px solid $error;
+}
+
+@mixin button {
+  font-size: $mobile-label-btn-link-font;
+  font-weight: $weight-semi;
+  line-height: $mobile-label-btn-link-line-height;
+  text-align: center;
+  height: 2.25rem;
+  width: 100%;
+  padding: 0 1rem;
+  border-radius: 1.25rem;
+  border-style: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include tablet {
+    font-size: $normal-label-btn-link-font;
+    line-height: $normal-label-btn-link-line-height;
+    height: 2.375rem;
+    width: auto;
+  }
+}

@@ -41,33 +41,105 @@
 }
 
 .outfit {
-  text-align: center;
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
+  &--wrapper {
+    width: 64%;
+    height: 100vh;
   }
 
-  &__column {
-    width: 20%;
+  &__carousel {
+    padding: 0.5rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+    margin: 0.5rem;
+
+    &--vertical {
+      width: 18vw;
+      // height: 100vh;
+      overflow-y: visable;
+    }
+
+    &--horizontal {
+    }
+  }
+
+  &__section {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    margin: 0.5rem;
+
+    &--size {
+      border: 2px solid $header;
+      width: 80%;
+      height: 50vh;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      color: grey;
+      padding: 1rem;
+    }
+
+    &--button {
+      background-color: $background;
+      border: none;
+      width: 4.5rem;
+      font-size: $mobile-label-btn-link-font;
+      font-weight: $weight-semi;
+      line-height: $mobile-label-btn-link-line-height;
+      // text-align: center;
+      // height: 2.25rem;
+      // width: 100%;
+      // padding: 0 1rem;
+      // border-radius: 1.25rem;
+      // border-style: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @include tablet {
+        font-size: $normal-label-btn-link-font;
+        line-height: $normal-label-btn-link-line-height;
+        // height: 2.375rem;
+        // width: auto;
+      }
+    }
   }
 
   &__images {
-    width: 100%;
-    // padding: 0.5rem;
-    background-position: center;
-    // width: 8rem;
-    border-radius: 4px;
-    aspect-ratio: 17 / 20;
-    object-fit: cover;
-    border-radius: 30px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    &--horizontal {
+      overflow-x: visable;
+      scroll-snap-type: x mandatory;
+    }
+
+    &--vertical {
+      flex-direction: column;
+      scroll-snap-type: y mandatory;
+    }
+
+    & img {
+      scroll-snap-align: start;
+      background-position: center;
+      width: 10vw;
+      aspect-ratio: 10 / 12;
+      object-fit: cover;
+      border-radius: 30px;
+    }
   }
 }
 
-.image__wrapper {
-  border-radius: 5px;
-  // border: 2px solid black;
-  box-sizing: border-box;
-  margin: 0.5rem;
-  padding: 0.5rem;
+.handle * {
+  pointer-events: none;
 }

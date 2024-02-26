@@ -4,4 +4,15 @@
 @use "../../styles/partials/mixin" as *;
 
 .header {
+  background-color: rgb(233, 212, 191);
+  padding: 1rem;
+  text-align: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    // padding-top: 0.5rem;
+    width: 50%;
+    margin: auto;
+  }
 }

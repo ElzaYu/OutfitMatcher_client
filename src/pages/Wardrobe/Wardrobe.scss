@@ -4,4 +4,55 @@
 @use "../../styles/partials/mixin" as *;
 
 .wardrobe {
+  &__section {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__carousel {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: #fff;
+    // box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+    margin: 1rem 2rem;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    max-height: 75vh;
+    width: 15vw;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    scroll-padding-top: 1.5rem;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & img {
+      scroll-snap-align: start;
+      background-position: center;
+      width: 10rem;
+      aspect-ratio: 17 / 20;
+      object-fit: cover;
+      border-radius: 30px;
+      margin: 0.5rem;
+    }
+  }
+
+  &__button {
+    & button {
+      width: 75%;
+    }
+  }
 }

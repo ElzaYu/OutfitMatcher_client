@@ -4,7 +4,29 @@
 @use "../../styles/partials/mixin" as *;
 
 .home {
+  text-align: center;
+  background-color: white;
+
+  &__wrapper {
+    border: 2px solid $header;
+    margin: 2rem;
+    padding: 5rem;
+  }
+
   &__buttons {
     display: flex;
+    justify-content: center;
+
+    & button {
+      margin: 0 3rem;
+      width: 15rem;
+    }
+  }
+
+  & h1 {
+    font-size: 100px;
+    font-weight: 300;
+    color: $header;
+    margin-bottom: 5rem;
   }
 }
