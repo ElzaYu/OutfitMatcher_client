@@ -5,7 +5,9 @@ import Button from "../Button/Button";
 const Header = () => {
   return (
     <nav className="header">
-      <h2>OUTFIT MATCHER</h2>
+      <Link className="header__font" to={"/"}>
+        <h2>OUTFIT MATCHER</h2>
+      </Link>
       <div className="header__wrapper">
         <Link to={`/matcher`}>
           <Button name="CREATE" />

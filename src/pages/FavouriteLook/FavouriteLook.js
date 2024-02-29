@@ -45,10 +45,18 @@ const FavouriteLook = () => {
       <div className="look__wrapper">
         {saveList.map((item) => (
           <div key={item.id} className="look__column">
-            <img className="look__image" src={item.accessory_image} />
-            <img className="look__image" src={item.top_image} />
-            <img className="look__image" src={item.bottom_image} />
-            <img className="look__image" src={item.shoes_image} />
+            {item.accessory_image && (
+              <img className="look__image" src={item.accessory_image} />
+            )}
+            {item.top_image && (
+              <img className="look__image" src={item.top_image} />
+            )}
+            {item.bottom_image && (
+              <img className="look__image" src={item.bottom_image} />
+            )}
+            {item.shoes_image && (
+              <img className="look__image" src={item.shoes_image} />
+            )}
             <div className="look__button">
               <Button onClick={() => deleteOutfit(item.id)} name="Delete" />
             </div>

@@ -3,6 +3,7 @@ import axios from "axios";
 import Draggable from "react-draggable";
 import "./Matcher.scss";
 import Header from "../../components/Header/Header";
+import Modal from "../../components/Modal/Modal";
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
@@ -17,6 +18,7 @@ const Matcher2 = () => {
   const [selectedShoes, setSelectedShoes] = useState(null);
   const dropBoxElement = useRef(null);
   const [saveList, setSaveList] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     const fetchedAccessories = async () => {
@@ -181,8 +183,7 @@ const Matcher2 = () => {
     } catch (error) {
       console.log(error);
     }
-    alert("SAVED");
-    // navigate("/");
+    setOpenModal(true);
   };
 
   return (
@@ -310,6 +311,8 @@ const Matcher2 = () => {
           </div>
         </div>
       </div>
+
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
     </section>
   );
 };
