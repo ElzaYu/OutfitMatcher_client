@@ -1,0 +1,51 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixin" as *;
+
+/* Modal Button */
+.modalButton {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 12px 24px;
+}
+
+/* Modal */
+.overlay {
+  background-color: rgba(183, 183, 183, 0.5);
+  //   margin: 3rem;
+  //   padding: 3rem;
+  border: 5px solid balck;
+
+  top: 29%;
+  left: 22%;
+  position: fixed;
+  width: 56%;
+  height: 50%;
+}
+
+.modal-content {
+  width: 20%;
+  height: 5%;
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $header;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 14px;
+  right: 8px;
+}

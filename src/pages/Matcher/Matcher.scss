@@ -56,8 +56,11 @@
 
     &--vertical {
       width: 18vw;
+      max-width: 18vw;
       // height: 100vh;
-      overflow-y: visable;
+      overflow-y: visible;
+      flex-grow: 0;
+      flex-basis: 18vw;
     }
 
     &--horizontal {
