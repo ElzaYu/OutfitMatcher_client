@@ -28,7 +28,6 @@ function App() {
           <Route path="/favoritelook" element={<FavoriteLook />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
